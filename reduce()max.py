@@ -1,0 +1,10 @@
+# Program to find maximum number using reduce()
+
+from functools import reduce
+
+numbers = [12, 45, 67, 23, 89, 34]
+
+maximum = reduce(lambda x, y: x if x > y else y, numbers)
+
+print("List Elements:", numbers)
+print("Maximum Element:", maximum)
